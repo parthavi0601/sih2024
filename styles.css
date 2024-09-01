@@ -1,0 +1,382 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8491d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    font-size:17px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e8491d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #d7381a;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    text-align: center;
+    z-index: 1;
+    font-size:30px ;
+}
+
+.cta-button {
+    font-size:20px;
+    background: #e8491d;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+.search-bar{
+    display:flex;
+    column-gap: 5px;
+}
+.login {
+    font-size: 20px;
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px; /* Increased padding for consistent size */
+    text-decoration: none;
+    border-radius: 10%; /* More rounded corners */
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+    width: 120px; /* Fixed width for equal size */
+    text-align: center; /* Center the text inside the button */
+}
+
+
+.cta-button:hover {
+    background: #d12e0e;
+}
+.trainer-card{
+    display:flex;
+    column-gap: 50px;
+}
+
+.container1{
+    display:flex;
+    column-gap: 30px;
+}
+
+.container2{
+    display:flex;
+    column-gap: 30px;
+}
+
+.icon-large {
+    font-size: 6em; /* Custom size */
+}
+
+.socials{
+    display:flex;
+    column-gap:50px;
+}
+
+.container3{
+    display:flex;
+    column-gap: 30px;
+}
+.shop-item{
+    display:flex;
+    column-gap: 50px;
+}
+.personalized{
+    display:flex;
+    column-gap: 30px;
+}
+
+.headings{
+    display:flex;
+    column-gap: 200px;
+}
+.quick-links a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quick-links a:hover {
+    color: #e8491d;
+}
+
+section {
+    padding: 90px 90px;
+    background: #222;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header.sticky {
+    background-color: #222; /* Darker background when sticky */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #e8491d;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    font-size: 16px;
+}
+
+button {
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #555;
+}
+
+.featured-articles, .blog-posts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article1{
+    background-image: url("https://img.freepik.com/free-photo/silhouette-woman-gym_23-2148024301.jpg");
+    background-size: cover; /* Make the background cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 20px; /* Add padding to the content */
+    color: white; /* Text color (optional) */
+}
+
+.featured-articles article, .blog-posts article {
+    flex: 1;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-articles article:hover, .blog-posts article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.featured-articles img, .blog-posts img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #444;
+}
+
+footer .footer-links a, footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+footer .footer-links a:hover, footer .social-media a:hover {
+    color: #e8491d;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    text-emphasis-color:white ;
+    background-color: rgb(0, 0, 0);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rounded-text-box {
+    border: 2px solid #fefefe; /* Border color and width */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the text box */
+    background-color: #383838; /* Background color */
+    height:10%;
+    width:60%; /* Optional: Set a max width */
+     /* Optional: Center the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visual effect */
+    display: flex; /* Use flexbox for alignment */
+    margin-bottom: 10px; 
+}
+
+.rounded-text-box2 {
+    border: 2px solid #fefefe; /* Border color and width */
+    border-radius: 15px; /* Rounded corners */
+  
+    padding: 20px; /* Padding inside the text box */
+    background-color: #383838; /* Background color */
+    height:10%;
+    width:60%; /* Optional: Set a max width */
+     /* Optional: Center the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visual effect */
+    margin-top: 10px; 
+    margin-left: 200px;
+   
+    
+}
+
+.community-events
+{
+    display:flex;
+    column-gap: 40px;
+}
+
+.container5{
+    display:block;
+    margin:auto;
+}
+
+.socials i {
+    color: #ffffff; /* Initial color of the icons */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color to red on hover */
+.socials i:hover {
+    color: red;
+}
+
+
+.buy-now {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    background-color:red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: white;
+}
